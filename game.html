@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>Collision Course</title> 
+	<link rel="stylesheet" type="css" href="bootstrap/css/bootstrap.min.css">
+	<link type="css" rel="stylesheet" href="btn.css">
+	<script type="text/javascript">
+	var diff = -5;
+	</script>
+	<script type="text/javascript" src="box2d.js"></script>
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="transitions.js"></script>
+</head>
+
+<body>
+
+	<img id="logo" src='Images/logo.png' style="position: absolute; top:50px; left:90px; visibility: hidden;"></img>
+	<img id="ship" src="Images/menuShip.png" style="position: absolute; top:150px; left:-25px; visibility: hidden;"></img>
+	<img id="sel" src="Images/selSpeed.png" style="position: absolute; top:80px; left:110px; visibility: hidden;"></img>
+	<img id="astro" src="Images/Menuastro.png" style="position: absolute; top:170px; left:330px; visibility: visible;"></img>
+
+	<button id="back" class="btn btn-primary" style="position: absolute; top: 370px; left:20px; visibility: hidden ">Back to Main menu</button>
+	<button id="proceed" class="btn btn-primary" style="position: absolute; top: 370px; left:500px; visibility: hidden">Play</button>
+
+
+	<button id="play" class="btn btn-primary" style="position: absolute; top:150px; left: 250px; visibility: hidden;">Play</button>
+	<button id="instns" class="btn btn-primary" style="position: absolute; top:195px; left:230px;visibility: hidden;">Instructions</button>
+	<button id="credits" class="btn btn-primary" style="position: absolute; top:240px;left:240px;visibility: hidden;">Credits</button>
+
+	<button id="fast1" class="btn btn-primary" style="position: absolute; top:150px; left: 250px; visibility: hidden;">Slow</button>
+	<button id="fast2" class="btn btn-primary" style="position: absolute; top:195px; left:250px;visibility: hidden;">Fast</button>
+	<button id="fast3" class="btn btn-primary" style="position: absolute; top:240px;left:245px;visibility: hidden;">3*10^8</button>
+
+
+	<canvas id="canvasGame" width="600" height="405" style="visibility: hidden; position: absolute; " onClick=newBall() ></canvas>
+	<canvas id="canvasMenu" width="600" height="405" style="visibility: visible; "  ></canvas>
+</body>
+
+</html>
